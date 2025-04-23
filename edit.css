@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.edit-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+.edit-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 24px;
+    color: #FFD700;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.rating label:hover,
+.rating input[type="radio"]:checked ~ label {
+    transform: scale(1.2);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #aaa;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn, .cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.cancel-btn {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.cancel-btn:hover {
+    background-color: #e0e0e0;
+}

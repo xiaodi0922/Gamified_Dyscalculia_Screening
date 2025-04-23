@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+  <script src="https://kit.fontawesome.com/0b5386f7f4.js" crossorigin="anonymous"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="login.css">
+  <title>Login</title>
+</head>
+<body>
+  
+<!-- Login Form -->
+<div class="wrapper">
+  <div class="login_box">
+    <div class="login-header">
+      <span>Login</span>  
+    </div>
+    <form id="loginForm">
+      <div class="input_box">
+        <input type="text" id="user" class="input-field" required>
+        <label for="user" class="label">Email</label>
+        <i class="fa-solid fa-user icon"></i>
+        <i class='bx bxs-check-circle'></i>
+        <i class='bx bxs-error-circle'></i>
+        <small>Email is invalid</small>
+      </div>
+      <div class="input_box">
+        <input type="password" id="pass" class="input-field" required>
+        <label for="pass" class="label">Password</label>
+        <i class="fa-solid fa-lock icon"></i>
+        <i class='bx bxs-check-circle'></i>
+        <i class='bx bxs-error-circle'></i>
+        <small>Password is too short</small>
+      </div>
+      <div class="remember-forget">
+        <div class="remember-me">
+          <input type="checkbox" id="remember">
+          <label for="remember">Remember me</label>
+        </div>
+        <div class="forgot">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+      <div class="input_box">
+        <input type="submit" class="input-submit" value="Login">
+      </div>
+    </form>
+    
+    <div class="register">
+      <span>Don't have an account? <a href="register.html">Register</a></span>
+    </div>
+  
+
+  </div>
+</div>
+<script src="login.js"></script>
+
+</body>
+</html>

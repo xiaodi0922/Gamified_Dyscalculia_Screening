@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" contect="width=decive-width",initial-scale=1.0>
+        <!--box icon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet"href="submit.css">
+        <link rel="stylesheet" href="home.css">
+        <title>Comment</title>
+      </head>
+<body>
+    <div class="header">
+        <!--Navigation bar-->
+        <a href="#" class="logo"><img src="image/dyscover.png" alt=""></a>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="home.php">Home</a>
+            <a href="home.php">Features</a>
+            <a href="home.php">Element</a>
+            <a href="forum.php">Forum</a>
+            <a href="login.html">Login/Register</a>
+        </nav>
+    </div>
+    </div>
+    <div class="wrapper">
+        
+        <h3>Share Your Thoughts</h3>
+        <form action="#">
+            <div class="rating">
+                <input type="number" name="rating" hidden>
+                <i class="bx bx-star star"style="--i:0"></i>
+                <i class="bx bx-star star"style="--i:1"></i>
+                <i class="bx bx-star star"style="--i:2"></i>
+                <i class="bx bx-star star"style="--i:3"></i>
+                <i class="bx bx-star star"style="--i:4"></i>
+            </div>
+            <textarea name="opinion" cols="30" rows="5" placeholder="Your opnion..."></textarea>
+            <div class="btn-group">
+                <button type="submit" class="btn submit">Submit</button>
+                <button class="btn cancel">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="submit.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
